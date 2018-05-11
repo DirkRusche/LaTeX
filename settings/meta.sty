@@ -1,0 +1,48 @@
+\def\AuthorFirstName{John}
+\def\AuthorLastName{Doe}
+\def\AuthorMail{john@doe.com}
+\def\AuthorNumber{007}
+
+\def\Title{My great thesis}
+\def\DocumentType{Bachelor thesis}
+\def\Publication{01.01.1970}
+
+\def\FirstReviewerName{Matt Smith}
+\def\FirstReviewerTitle{Prof. Dr.}
+\def\FirstReviewerFemale{0}
+
+\def\SecondReviewerExist{1}
+\def\SecondReviewerName{Alan Smith}
+\def\SecondReviewerTitle{Prof. Dr.}
+\def\SecondReviewerFemale{0}
+
+%\def\Keywords{Neuronales Netz, Neuronale Netze, Evolutionsmethoden, Bachelorarbeit}
+
+\def\NeedDeclaration{1}
+
+
+% don't change
+
+\def\InternFirstReviewer{Erstprüfer}
+\def\InternFirstReviewerFemale{Erstprüferin}
+
+\def\InternSecondReviewer{Zweitprüfer}
+\def\InternSecondReviewerFemale{Zweitprüferin}
+
+
+% absolutely dont change
+
+\def\AuthorName{\AuthorFirstName{} \AuthorLastName}
+
+
+\if\FirstReviewerFemale1
+	\def\InternFirstReviewerUse{\InternFirstReviewerFemale}
+\else 
+	\def\InternFirstReviewerUse{\InternFirstReviewer}
+\fi
+
+\if\SecondReviewerFemale1
+	\def\InternSecondReviewerUse{\InternSecondReviewerFemale}
+\else 
+	\def\InternSecondReviewerUse{\InternSecondReviewer}
+\fi

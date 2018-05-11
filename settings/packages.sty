@@ -1,0 +1,80 @@
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[ngerman]{babel}
+
+\usepackage{amsmath}
+\usepackage{mathtools}
+
+\usepackage{amsfonts}
+
+\usepackage{amssymb}
+
+\usepackage[paper=a4paper,top=40mm,bottom=40mm]{geometry}
+
+\usepackage{float} % Positionierung
+
+\usepackage{wallpaper} % Fuer das Titelblatt
+
+\usepackage{tabularx} % Momentan nur fuer Titelseite benoetigt
+\usepackage{ltablex} % für lange Tabellen und tabularx (ist merge aus beiden paketen)
+\usepackage{makecell} % um Zeilenumbrüche innerhalb einer Zelle zu machen
+\usepackage{multirow}
+\usepackage{dcolumn}
+\newcolumntype{d}[1]{D{.}{.}{#1}}
+\usepackage[locale=DE]{siunitx}
+\usepackage{array}
+
+\usepackage[final]{microtype}
+
+\usepackage[printonlyused]{acronym} % Abkuerzungen
+
+\usepackage{fancyhdr} % Header Footer fancy
+
+\usepackage{pgfplots} % pgf plots
+
+\usepackage[tableposition=below]{caption} % Titel für Tabellen etc
+
+\usepackage[hang]{footmisc} % um die footnotes linksbündig zu machen
+
+
+% Todo Notes
+% Dokumentation: http://ctan.mackichan.com/macros/latex/contrib/todonotes/todonotes.pdf
+\usepackage[ngerman, linecolor=orange, textsize=tiny, obeyFinal]{todonotes} 
+
+
+% Inhaltsverzeichnis Sektionen inkludieren
+% Dokumentation: http://vesta.informatik.rwth-aachen.de/ftp/pub/mirror/ctan/macros/latex/contrib/tocbibind/tocbibind.pdf
+\usepackage[nottoc] % exludiert das inhaltsverzeichnis
+{tocbibind}
+
+% If Draft
+% Dokumentation: http://vesta.informatik.rwth-aachen.de/ftp/pub/mirror/ctan/macros/latex/contrib/oberdiek/ifdraft.pdf
+\usepackage{ifdraft}
+
+% Typesetting theorems
+% Dokumentation: https://www.ctan.org/pkg/amsthm?lang=de
+\usepackage{amsthm} 
+
+% Bibliography
+\usepackage[
+backend=bibtex,
+style=alphabetic
+]{biblatex}
+
+\usepackage{csquotes}
+
+\usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
+
+%\usepackage{svg} % einbinden von svg dateien
+
+\usepackage{pdflscape} % um gedrehte seiten zu zeigen
+
+
+% Unterpakete
+
+\usetikzlibrary{calc, shapes, decorations, svg.path, arrows, fit, positioning, plotmarks}
+\pgfplotsset{compat=newest}
+\usepgfplotslibrary{patchplots}
+
+\usepackage[breaklinks=true]{hyperref}

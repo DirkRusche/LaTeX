@@ -1,0 +1,95 @@
+\documentclass[12pt,a4paper,titlepage,final]{article}
+
+\def\abschnitte{abschnitte}
+\def\settings{settings}
+
+\usepackage{\settings/packages}
+\usepackage{\settings/meta}
+\usepackage{\settings/befehle}
+
+
+\setlength{\headheight}{15pt} 
+
+\begin{document}
+
+\setcounter{page}{1}
+\pagenumbering{roman}
+\pagestyle{plain}
+
+\hypersetup{pageanchor=false}
+
+\input{title}
+
+\hypersetup{pageanchor=true}
+
+% ***************************************
+% Declaration / Erklärung
+% ***************************************
+
+\if\NeedDeclaration1
+	\input{declaration}
+	\newpage{}
+\fi
+
+
+% ***************************************
+% Tabel of conents / Inhaltsverzeichnis
+% ***************************************
+
+\tableofcontents
+\newpage{}
+
+% ***************************************
+% List of figures / Abbildungsverzeichnis
+% ***************************************
+
+\listoffigures 
+\newpage{}
+
+% ***************************************
+% List of tables / Tabellenverzeichnis
+% ***************************************
+
+\listoftables
+\newpage{}
+
+% ***************************************
+% Abbrevations / Abkürzungsverzeichnis
+% ***************************************
+
+\input{abbreviation}
+\newpage{}
+
+% ***************************************
+% Content
+% ***************************************
+
+\setcounter{table}{0}
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
+
+% Pagestyle / Header / Footer
+\pagestyle{fancy}
+\rhead{}
+
+
+\input{content/example.tex}
+\newpage{}
+
+% ***************************************
+% Appendix
+% ***************************************
+
+\pagestyle{plain}
+
+\printbibliography[heading=bibintoc]
+
+\begin{appendix}
+
+\input{appendix}
+
+\end{appendix}
+
+
+\end{document}

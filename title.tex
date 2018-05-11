@@ -1,0 +1,50 @@
+\begin{titlepage}
+
+\newgeometry{lmargin={2cm},rmargin={2cm}, tmargin={2cm},bmargin = {2cm}}
+\ThisCenterWallPaper{1.0}{title/h-logo-background}	
+
+  \begin{minipage}[t]{10cm}
+  \includegraphics[width=10cm]{title/h-logo-full-font-embed}\\
+  \end{minipage}
+  \vspace{2.5cm}
+
+	\begin{center}
+
+    \vspace{0.8cm}
+
+    \vspace{3cm}
+    \begin{Huge}
+    \textsc{\DocumentType}\end{Huge}\\
+    \vspace{0.8cm}
+  	\begin{huge}
+  	{\Title}
+  	\end{huge}
+  	 \vspace{0.6cm} \\
+  	  	  \begin{large}von\end{large}
+  	  \\ \begin{LARGE}
+  	   \vspace{0.6cm}
+  	  {\AuthorName}\\
+  	  {\large \ifoptionfinal{\AuthorNumber}{xxxxx}}\\
+  	  \vspace{0.8cm}
+  	 
+  	\end{LARGE}
+  	
+    \vspace{3.0cm}
+	\end{center}
+	\begin{large}
+
+\begin{tabularx}{\textwidth}{l@{\hspace{2.0cm}}X}
+
+\InternFirstReviewerUse: & \FirstReviewerTitle{} \FirstReviewerName \\
+\if\SecondReviewerExist1
+	\InternSecondReviewerUse: &  \SecondReviewerTitle{} \SecondReviewerName \\
+\fi
+\\
+\ifoptionfinal{Eingereicht}{Stand}: & \Publication
+
+
+\end{tabularx}
+  
+\end{large}
+
+\end{titlepage}

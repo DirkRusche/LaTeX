@@ -1,0 +1,84 @@
+% ToDo Befehle
+\newcommand{\todoref}[2][]{\todo[color=red, #1]{\textbf{Referenz:} #2}}
+\newcommand{\todolatex}[2][]{\todo[color=green, #1]{{\LaTeX} : #2}}
+\newcommand{\todonice}[2][]{\todo[color=white, #1]{\textit{Nice to have:} #2}}
+\newcommand{\todoask}[2][]{\todo[color=yellow, #1]{\textbf{Fragen:} #2}}
+\newcommand{\todoallg}[2][]{\todo[color=gray, #1]{\textbf{Herausfinden:} #2}}
+\newcommand{\todohagg}[2][]{\todo[color=blue, #1]{\textbf{Hagg:} #2}}
+\newcommand{\todocont}[2][]{\todo[color=cyan, #1]{\textbf{Content:} #2}}
+\newcommand{\tododef}[2][]{\todo[color=magenta, #1]{\textbf{Definition:} #2}}
+\newcommand{\todofigure}[2][]{\todo[color=white, #1]{\textbf{Abbildung:} #2}}
+\newcommand{\todoend}[2][]{\todo[color=brown, #1]{\textit{Am Ende:} #2}}
+
+% Abbildung
+
+\newcommand{\figcite}[1]{\parencite{#1}}
+\newcommand{\anlehnung}[1]{In Anlehnung an: \figcite{#1}}
+\newcommand{\entnommen}[1]{Entnommen aus: \figcite{#1}}
+
+\newcommand{\centfigure}[4][]{
+	\begin{figure}[H]
+		\begin{center}
+			#2
+		\end{center}
+		#3
+		
+		\ifthenelse{\equal{#1}{}}{}{
+			\begin{center}
+				\vspace{-8pt}\scriptsize{#1}
+			\end{center}
+		}
+		
+		#4
+	\end{figure}
+}
+
+
+\newcommand{\centtable}[4][]{
+	\begin{table}[H]
+		\begin{center}
+			#2
+		\end{center}
+		#3
+		
+		\ifthenelse{\equal{#1}{}}{}{
+			\begin{center}
+				\vspace{-8pt}\scriptsize{#1}
+			\end{center}
+		}
+		
+		#4
+	\end{table}
+}
+
+
+% Schusterjunge, Hurentochter
+
+\clubpenalty=10000 % schliesst Schusterjungen aus
+\widowpenalty=10000 % schliesst Hurenkinder aus
+\displaywidowpenalty = 10000
+
+% Damit Absaetze nicht eingerueckt werden
+
+\parskip0.5ex % parskip auf font/2
+\parindent0ex % Einrueckung auf 0
+
+% Pdf Infos
+
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	filecolor=black,
+	citecolor=black,
+	urlcolor=black,
+	plainpages=false,
+	pdftitle={\Title},
+	pdfsubject={\DocumentType},
+	pdfauthor={\AuthorName {<}\AuthorMail{>}},
+	pdfproducer={},
+%	pdfkeywords={\Keywords},
+	bookmarksnumbered=true,
+	pdfpagemode=UseOutlines,
+	pdfpagelayout=SinglePage, 
+	bookmarksopen=true
+}
