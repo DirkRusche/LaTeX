@@ -1,4 +1,4 @@
-# LaTeX Template for H-BRS
+# LaTeX Template for H-BRS [![Build Status](https://travis-ci.org/DirkRusche/LaTeX.svg?branch=master)](https://travis-ci.org/DirkRusche/LaTeX)
 
 This is a LaTeX Template for students at `Hochschule Bonn-Rhein-Sieg` in Sankt-Augustin (Germany).
 
