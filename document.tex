@@ -8,7 +8,9 @@
 \usepackage{\settings/befehle}
 
 
-\setlength{\headheight}{15pt} 
+\setlength{\headheight}{15pt}
+
+\bibliography{content/literature}
 
 \begin{document}
 
@@ -18,7 +20,7 @@
 
 \hypersetup{pageanchor=false}
 
-\input{title}
+\input{frame/title}
 
 \hypersetup{pageanchor=true}
 
@@ -27,7 +29,7 @@
 % ***************************************
 
 \if\NeedDeclaration1
-	\input{declaration}
+	\input{frame/declaration}
 	\newpage{}
 \fi
 
@@ -57,7 +59,7 @@
 % Abbrevations / Abkürzungsverzeichnis
 % ***************************************
 
-\input{abbreviation}
+\input{content/abbreviation}
 \newpage{}
 
 % ***************************************
@@ -87,7 +89,7 @@
 
 \begin{appendix}
 
-\input{appendix}
+\input{content/appendix}
 
 \end{appendix}
 
