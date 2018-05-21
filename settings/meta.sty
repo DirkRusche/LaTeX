@@ -18,8 +18,15 @@
 
 \def\NeedDeclaration{1}
 \def\WithoutSerif{0}
+\def\Language{de}
 
 % don't change
+
+\ifnum\pdfstrcmp{\Language}{de}=0
+	\usepackage{language/german}
+\else
+	\usepackage{language/english}
+\fi
 
 \def\InternFirstReviewer{Erstprüfer}
 \def\InternFirstReviewerFemale{Erstprüferin}
